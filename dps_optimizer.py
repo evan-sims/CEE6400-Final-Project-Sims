@@ -279,7 +279,7 @@ else:
 optimal_df = pd.DataFrame({"T1": [best_calib_T1], "T2": [best_calib_T2]})
 
 # Save it to a CSV
-optimal_df.to_csv("/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/optimal_dps_params.csv", index=False)
+optimal_df.to_csv("./optimal_dps_params.csv", index=False)
 
 print(f"Optimal Charging Threshold (T1): ${best_calib_T1:.2f}/MWh")
 print(f"Optimal Discharging Threshold (T2): ${best_calib_T2:.2f}/MWh")
@@ -408,7 +408,7 @@ plt.ylim(0, 300)
 plt.grid(True, alpha=0.3)
 plt.legend(loc='upper left')
 
-plt.savefig('/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/Plots/DPS_heatmap.png')
+plt.savefig('./DPS_heatmap.png')
 plt.show()
         
         
