@@ -255,7 +255,7 @@ actual_lmp = test_lmp
 x_perf, c_perf, d_perf, perf_cum_profits = run_perfect_MPC(perfect_forecast, actual_lmp, bess, T, N, x0)
 
 
-np.savetxt("/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/perf_mpc_cum_profits.csv", perf_cum_profits, delimiter=",", fmt="%d")
+np.savetxt("./perf_mpc_cum_profits.csv", perf_cum_profits, delimiter=",", fmt="%d")
 
 #%% Time-series analysis
 
@@ -524,7 +524,7 @@ one_daily_cycle = np.array(daily_cycle)[46080 : 46080 + 288]
 # Run imperfect forecast MPC
 x_imperf, c_imperf, d_imperf, imperf_cum_profits = run_imperfect_MPC(actual_lmp, one_daily_cycle, AR_coeffs, bess, T, N, x0)
 
-np.savetxt("/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/imperf_mpc_cum_profits.csv", imperf_cum_profits, delimiter=",", fmt="%d")
+np.savetxt("./imperf_mpc_cum_profits.csv", imperf_cum_profits, delimiter=",", fmt="%d")
 
 
 # AR(2) + STL predictive forecast, Must start at timestep 3 or later!
