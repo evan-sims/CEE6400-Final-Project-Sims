@@ -11,7 +11,7 @@ Data:
 The data used is from the GridStatus library in Python. All the necessary data is pulled into each code file at the beginning, so there's no
 separate data files to include. 
 
-Link: opensource.gridstatus.io
+Link: [opensource.gridstatus.io](https://opensource.gridstatus.io/en/latest/)
 
 Code: The code is split into three files. 
 
