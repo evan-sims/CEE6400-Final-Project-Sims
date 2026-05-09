@@ -4,7 +4,7 @@ Instructor: Dr. Stefano Galelli
 
 CEE 6400 Final Project
 
-This is a repository for the code from my final project called "Comparing Algorithms for Battery Energy Arbitrage".
+This is a repository for the code from my final project called "Comparing Control Algorithms for Battery Energy Arbitrage".
 
 Data:
 
