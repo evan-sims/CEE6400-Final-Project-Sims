@@ -213,7 +213,7 @@ class DPS_Policy:
         return action
     
 # Import results from DPS optimization script
-opt_dps_params = pd.read_csv('/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/optimal_dps_params.csv')
+opt_dps_params = pd.read_csv('./optimal_dps_params.csv')
 
 # Extract values from csv
 optimal_T1 = opt_dps_params["T1"][0]
@@ -228,8 +228,8 @@ threshold for the battery, based on the NYISO data
 The optimization for this MPC occurs in the file mpc.py
 """
 # Import the MPC results
-obj_perf_mpc = pd.read_csv("/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/perf_mpc_cum_profits.csv")        
-obj_imperf_mpc = pd.read_csv("/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/imperf_mpc_cum_profits.csv")        
+obj_perf_mpc = pd.read_csv("./perf_mpc_cum_profits.csv")        
+obj_imperf_mpc = pd.read_csv("./imperf_mpc_cum_profits.csv")        
 
 
    
@@ -337,7 +337,7 @@ ax_profit.grid(True, alpha=0.3)
 ax_profit.legend(loc='upper left')
 
 plt.tight_layout()
-plt.savefig('/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/Plots/algo_comparison.png', bbox_inches='tight', dpi=150)
+plt.savefig('./algo_comparison.png', bbox_inches='tight', dpi=150)
 
 plt.show()
 
@@ -379,7 +379,7 @@ ax_profit.grid(True, alpha=0.3)
 ax_profit.legend(loc='upper left')
 
 plt.tight_layout()
-plt.savefig('/Users/evansims/Documents/05_School/Senior/CEE 6400/Final Project/Plots/zoomed_algo_comparison.png', bbox_inches='tight', dpi=150)
+plt.savefig('./zoomed_algo_comparison.png', bbox_inches='tight', dpi=150)
 plt.show()
 
 
