@@ -11,6 +11,8 @@ Data:
 The data used is from the GridStatus library in Python. All the necessary data is pulled into each code file at the beginning, so there's no
 separate data files to include. 
 
+Link: opensource.gridstatus.io
+
 Code: The code is split into three files. 
 
 1) final_proj_model.py --> This is the main file. It contains the baseline algorithms and pulls in the results from DPS and MPC for the
